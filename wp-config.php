@@ -24,10 +24,10 @@ if (!defined('DB_NAME')) {
 	define('DB_NAME', 'mitcbrru_tkk');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'mitcbrru_tkk');
+	define('DB_USER', 'root');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', '6S(-P7vfa4');
+	define('DB_PASSWORD', 'root');
 }
 if (!defined('DB_HOST')) {
 	define('DB_HOST', 'localhost');
