@@ -141,9 +141,12 @@ ul#menu-main-menu a:hover {
   background-position: bottom;
   height: auto;
 }
+.page-template-gallery-page .hero-primary {
+  background-color: #24abe2;
+  height: auto;
+}
 .page-template-contact-page .hero-primary {
-  background-image: url(images/contact.jpg);
-  background-position: bottom;
+  background-color: #24abe2;
   height: auto;
 }
 .hero-solid-primary {
@@ -177,8 +180,8 @@ ul#menu-main-menu a:hover {
   line-height: 110%;
 }
 .hero-lead {
-  font-size: 1.414em;
-  color: #24abe2;
+  font-size: 1em;
+  color: #ffffff;
   font-weight: 400;
 }
 .read-blog-button {
@@ -1466,7 +1469,7 @@ address {
   color: #fff !important;
 }
 li.current-menu-item a {
-  color: #136a8d !important;
+  color: #ffffff !important;
 }
 li.active-menu-item a {
   color: #ffffff !important;

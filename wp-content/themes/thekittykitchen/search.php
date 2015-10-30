@@ -12,12 +12,13 @@ get_header(); ?>
 		<div class="container">
 
 			
-			<?php if ( have_posts() ) : ?>
+			
 
 				<header class="page-header bump-top-md">
 					<h2 class="page-title"><?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 				</header><!-- .page-header -->
 				<hr>
+				<?php if ( have_posts() ) : ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
