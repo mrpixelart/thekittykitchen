@@ -2,7 +2,7 @@
 Contributors: rnzo
 Donate link: http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension
 Tags: contact form 7, email, mailing list, createsend, mandrill, renzo, renzo johnson, cme, contact, form, contact form, mail chimp, newsletter, mailchimp, chimpmail
-Requires at least: 3.9
+Requires at least: 4.2
 Tested up to: 4.3
 Stable tag: 4.0.1
 License: GPLv2 or later
@@ -21,8 +21,8 @@ Integrate Contact Form 7 with [MailChimp](http://renzojohnson.com/contributions/
 * Use a different mailing list per contact form
 * Single opt-in - no confirmation email send to subscribers
 * Double opt-in - confirmation email send to subscribers
-* Opt-in checkbox - add the chance to opt-in/opt-out
-* Support for custom fields
+* [Opt-in checkbox](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension/mailchimp-opt-in-checkbox) - add the chance to opt-in/opt-out
+* Support for [custom fields](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension/mailchimp-custom-fields)
 * Latest MailChimp API
 * Constantly updated
 
@@ -65,6 +65,7 @@ Do you have questions or issues with Contact Form 7 MailChimp Extension? Use the
 7. [MailChimp Form](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
 8. [Aweber vs Mailchimp](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
 9. [Mailchimp Contact Form](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension)
+10. [MailChimp Custom fields](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension/mailchimp-custom-fields)
 
 == Screenshots ==
 
@@ -74,6 +75,10 @@ Do you have questions or issues with Contact Form 7 MailChimp Extension? Use the
 == Changelog ==
 
 For more information, see [Releases](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension).
+
+= 0.4.20 =
+
+* Updated documentation for [MailChimp Custom fields](http://renzojohnson.com/contributions/contact-form-7-mailchimp-extension/mailchimp-custom-fields).
 
 = 0.4.8 =
 

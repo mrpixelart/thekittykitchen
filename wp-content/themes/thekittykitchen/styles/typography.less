@@ -1,0 +1,175 @@
+//==================================
+// set base typogprahy
+//==================================
+html {
+	min-height: 100%;
+}
+body {
+	font-family:@body-typeface;
+	min-height: 100%;
+}
+
+h1 {
+	font-family:@body-typeface;
+	font-weight: @light;
+	line-height: 105%;
+}
+
+h2 {
+	font-family:@headline-typeface;
+	font-weight: @semi-bold;
+	line-height: 105%;
+	text-transform: uppercase;	
+}
+h3 {
+	font-family:@headline-typeface;
+	font-weight: @semi-bold;
+	line-height: 105%;
+}
+
+h4 {
+	font-family:@headline-typeface;	
+	font-weight: @semi-bold;
+	line-height: 105%;
+}
+
+p {
+	font-family:@body-typeface;
+	font-weight: @regular;
+	line-height: 145%;
+	color: darken(@gray, 40%);
+}
+.lead {		
+		color: @black;
+		font-weight: @semi-bold;
+}
+
+label {
+	font-family:@headline-typeface;
+	font-weight: bold;
+	line-height: 120%;	
+}
+
+
+//==================================
+// responsive typography
+//==================================
+
+//mobile-only styles
+@media (max-width: 768px) {
+	/*Mobile typeface sizes*/
+	body {
+		font-size: @mobile-body;
+	}
+
+	h1 {
+		font-size: @xl-size;		
+	}
+
+	h2 {
+		font-size: @md-size;		
+	}
+	h3 {
+		font-size: @md-size;		
+	}
+	h4 {
+		font-size: @sm-size;	
+	}
+	p {
+		font-size: @xs-size;
+		font-weight: 400;		
+	}
+	span.lead {
+		font-weight: @regular;
+	}
+}
+
+//for tablet sizes
+@media (min-width: 768px) {
+	/*Tablet typeface sizes*/
+	body {
+		font-size: @tablet-body;
+	}	
+	h1 {
+		font-size: @xl-size;		
+	}
+
+	h2 {
+		font-size: @md-size;		
+	}
+	h3 {
+		font-size: @md-size;		
+	}
+	h4 {
+		font-size: @sm-size;			
+	}
+	p {
+		font-size: @xs-size;		
+	}
+	//for nothing bigger than tablet
+	@media (max-width: 992px) {
+
+	}
+}
+
+//for desktop (medium) sizes
+@media(min-width:992px){
+	/*Desktop typeface sizes*/
+	body {
+		font-size: @desktop-body;
+	}	
+	h1 {
+		font-size: @xl-size;		
+	}
+
+	h2 {
+		font-size: @md-size;		
+	}
+	h3 {
+		font-size: @md-size;		
+	}
+	h4 {
+		font-size: @sm-size;				
+	}
+	p {
+		font-size: @xxs-size;		
+	}
+	label {
+		font-size: @xs-size;
+	}
+
+	//for nothing bigger than desktop (medium)
+	@media (max-width: 1200px) {
+
+	}
+}
+
+//For desktop (large) sizes
+@media(min-width:1200px){
+	/*Large Desktop typeface sizes*/
+	body {
+		font-size: @lg-desktop-body;
+	}	
+	h1 {
+		font-size: @xl-size;		
+	}
+
+	h2 {
+		font-size: @md-size;		
+	}
+	h3 {
+		font-size: @md-size;		
+	}
+	h4 {
+		font-size: @sm-size;		
+	}
+	p {
+		font-size: @xxs-size;		
+	}
+	.lead {
+		font-size: @xs-size;
+	}
+	label {
+		font-size: @xs-size;
+	}
+}
