@@ -10,15 +10,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-			//WordPress loop for custom post type
-	$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
-	while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
 
 	<header class="entry-header nudge-bottom-sm">
 	</header><!-- .entry-header -->
 	<div class="row">
+
 		<div class="col-md-10 col-lg-9">
+		<?php
+			//WordPress loop for custom post type
+		$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
+		while ($my_query->have_posts()) : $my_query->the_post(); ?>
 			<div class="row">
 				<div class="col-md-2 " >
 					<div class="hidden-xs hidden-sm">
@@ -63,14 +65,15 @@
 					</div>	
 				</div>		
 			</div>
+				<?php endwhile;  wp_reset_query(); ?>
 		</div>
+	
 
+	<div class="col-md-2 col-lg-3 " >
+		<?php get_sidebar(); ?>
+	</div>	
+</div>
 
-		<div class="col-md-2 col-lg-3 " >
-			<?php get_sidebar(); ?>
-		</div>	
-	</div>
-<?php endwhile;  wp_reset_query(); ?>
 </article><!-- #post-## -->
 
 

@@ -15,12 +15,15 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/semantic-ui/dist/semantic.min.css" />
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/flexslider/flexslider.css" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,600,700' rel='stylesheet' type='text/css'>
-	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/Naver/jquery.fs.naver.min.js"></script>		
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>	
 
+
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/flexslider/jquery.flexslider.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
 	<div id="fb-root"></div>
 
 
@@ -51,7 +54,7 @@
 
 	<div id="wrap">
 		<div id="main">
-	
+
 
 
 
