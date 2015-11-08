@@ -1,41 +1,30 @@
-body, html {
-  display: block;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  width: auto;
-  overflow-x: hidden;
-}
-
 //================================================
 // brand typography
 //================================================
-@headline-typeface:"Lato",'Helvetica', sans-serif;
-@body-typeface: "Lato", 'Helvetica' sans-serif;
+@headline-typeface:'Lato', sans-serif;
+@body-typeface: 'Merriweather', serif;
 
 //================================================
 // brand colors
 //================================================
-@brand-primary:  #24abe2; 
-@brand-secondary: #29bc3a;
-@green: #8BC34A;
-@yellow: #F1A709;
-@purple: #BA68C8;
+@brand-primary:  #6DBFB8; 
+@brand-secondary: #FEC500;
+@green: #5bbd72;
+@orange: #F26106;
 
 //================================================
 // nav color & links
 //================================================
-@nav-color: rgba(34, 171, 232, .9);
-@nav-menu: @link-hover;
-@nav-menu-hover: @black;
-@nav-menu-current: @white;
-@nav-typeface: @body-typeface;
+@nav-color: @white;
+@nav-menu: @black;
+@nav-menu-hover: @gray;
+@nav-menu-current: @brand-primary;
+@nav-typeface: @headline-typeface;
 
 //================================================
 // body color & section padding
 //================================================
-@body: lighten(@white,3%);
+@body: lighten(#E9EDF1,5%);
 @section-padding: 40px 0;
 
 //================================================
@@ -45,9 +34,6 @@ body, html {
 @hero-lg: 160px 0 100px 0;
 @hero-md: 120px 0;
 @hero-sm: 80px 0;
-@hero-image-primary:url(./images/primary.jpg);
-@hero-image-recipes:url(./images/recipe.jpg);
-@hero-image-contact:url(./images/contact.jpg);
 
 //================================================
 // typography size

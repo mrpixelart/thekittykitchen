@@ -1,100 +1,36 @@
 //==================================
 // hero styling
 //==================================
-.hero-primary {
-	background-image: @hero-image-primary;
-	max-width: 100%;
-	background-size: cover;
-	background-position: bottom;
-	background-attachment: fixed;
-	height: 100vh;
-}
-
-.page-template-recipe-page {
-	.hero-primary {
-		background-image: @hero-image-recipes;
-		background-position: bottom;
-		height: auto;
-	}
-}
-
-.page-template-gallery-page {
-	.hero-primary {
-		background-color: @brand-primary;
-		height: auto;
-	}
-}
-
-.page-template-contact-page {
-	.hero-primary {
-		background-color: @brand-primary;
-		height: auto;
-	}
-}
-
-
-
-.hero-solid-primary {
-	background: @brand-primary;
-	color: @white;
-}
-
-.hero-solid-secondary {
-	background: @brand-secondary;
-	color: @white;
-}
 
 .hero-lg {
 	height: auto;
-	padding: @hero-lg;
-	color: @white;
+	padding: @hero-lg 0;
 }
 
 .hero-md {
 	height: auto;
-	padding: @hero-md;
+	padding: @hero-md 0;
 	color: @white;
 }
 
 .hero-sm {
 	height: auto;
-	padding: @hero-sm;
+	padding: @hero-sm 0;
 	color: @white;
 }
 
 .hero-title {
-	font-size: @xl-size;
+	font-size: @md-size;
 	font-weight: @regular;
-}
-
-.hero-cta {
 	line-height: 110%;
 }
 
 .hero-lead {
 	font-size: @xs-size;
-	color: @white;
+	color: @brand-primary;
 	font-weight: @regular;
 }
 
-.read-blog-button {
-	text-transform: uppercase !important;
-	font-size: @xs-size !important;
-	font-weight: @regular !important;
-}
-
-.hero-test {
-	background-image: @hero-image-primary;
-	max-width: 100%;
-	background-size: cover;
-	background-position: bottom;
-	background-attachment: fixed;
-	height: 100vh;
-}
-
-.center-hero {
-	margin: 0 22.5%;
-	width: auto;
-	max-width: 100%;
-	overflow-x: hidden;
+.hero-gray {
+	background-color: lighten(@gray, 12%);
 }

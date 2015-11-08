@@ -11,10 +11,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<div class="container">
 
-			
-			
-
-				<header class="page-header bump-top-md">
+				<header class="page-header">
 					<h2 class="page-title"><?php printf( __( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 				</header><!-- .page-header -->
 				<hr>

@@ -1,5 +1,5 @@
 //==================================
-// general helpers
+// alignment utilities
 //==================================
 
 //content alignment
@@ -23,6 +23,29 @@
 	padding-right: 0 !important;
 }
 
+.center {
+	text-align: center !important;
+}
+
+.left {
+	text-align: left !important;
+}
+
+.right {
+	text-align: right !important;
+}
+
+.inline {
+	display: inline !important;
+}
+
+.fill-height {
+	min-height: 100% !important;
+}
+
+.fill-width {
+	min-width: 100% !important;
+}
 
 //==================================
 // bump all
@@ -125,6 +148,10 @@
 //==================================
 // bump right
 //==================================
+.bump-right-xxs {
+	margin-right: @xxs-size;
+}
+
 .bump-right-xs {
 	margin-right: @xs-size;
 }
@@ -171,6 +198,10 @@
 //==================================
 // bump left
 //==================================
+.bump-left-xxs {
+	margin-left: @xxs-size;
+}
+
 .bump-left-xs {
 	margin-left: @xs-size;
 }
@@ -194,6 +225,10 @@
 //==================================
 // nudge all
 //==================================
+.nudge-all-xxs {
+	padding: @xxs-size;
+}
+
 .nudge-all-xs {
 	padding: @xs-size;
 }
@@ -263,6 +298,10 @@
 //==================================
 // nudge top
 //==================================
+.nudge-top-xxs {
+	padding-top: @xxs-size;
+}
+
 .nudge-top-xs {
 	padding-top: @xs-size;
 }
@@ -332,6 +371,10 @@
 //==================================
 // nudge left
 //==================================
+.nudge-left-xxs {
+	padding-left: @xxs-size;
+}
+
 .nudge-left-xs {
 	padding-left: @xs-size;
 }
@@ -352,24 +395,9 @@
 	padding-left: @xl-size;
 }
 
-
-.center {
-	text-align: center;
-}
-
-.left {
-	text-align: left;
-}
-
-.right {
-	text-align: right;
-}
-
-.inline {
-	display: inline;
-}
-
-//image alignment
+//==================================
+// image utilities
+//==================================
 .img-bump {
 	margin-top:20px;
 }
@@ -379,40 +407,32 @@
 	display: block;
 }
 
-.card-block {
-	width:100% !important;
-	display:block;
-}
 
 iframe {
 	max-width: 100%;
 	min-width: 100%;
 }
+
 //==================================
-// typography helpers
+// typographic utilities
 //==================================
 .xxs-text {
-font-size: @xxs-size;
+	font-size: @xxs-size;
 }
 .xs-text {
-font-size: @xs-size;
+	font-size: @xs-size;
 }
 .sm-text {
-font-size: @sm-size;
+	font-size: @sm-size;
 }
 .md-text {
-font-size: @md-size;
+	font-size: @md-size;
 }
 .lg-text {
-font-size: @lg-size;
+	font-size: @lg-size;
 }
 .xl-text {
-font-size: @xl-size;
-}
-
-address {
-	font-size: @xs-size;
-	font-style: initial;
+	font-size: @xl-size;
 }
 
 .inverted-text {
@@ -432,31 +452,82 @@ address {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-} // .unstyled-list
+}
 
-.list-inline {
+.inline-list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	li {
 		display: inline-block;
-		} // li
-} // .list-inline
+	}
+}
+
+.lead {
+	font-family:@headline-typeface;
+	text-transform: uppercase;
+	font-size: @xs-size;
+	font-weight: @regular;
+	line-height: 150%;
+	padding-top: 6px;
+}
+
+p.description {
+	font-size: inherit;
+}
 
 .primary-text {
-	color: @brand-primary !important;
+	font-family: @headline-typeface;
 }
 
 .secondary-text {
-	color: @brand-secondary !important;
+	font-family: @body-typeface;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
 }
 
 .small {
 	font-size: @xxs-size;
 }
 
+.super {
+	vertical-align: super !important;
+}
+
 .date {
 	color: @gray-dark;
+}
+
+address {
+	font-size: @xs-size;
+	font-style: initial;
+}
+
+mark {
+	background-color: inherit;
+	color: @brand-primary;
+}
+
+//==================================
+// color utilities
+//==================================
+
+.primary-color {
+	color: @brand-primary !important;
+}
+
+.secondary-color {
+	color: @brand-secondary !important;
+}
+
+.green {
+	color: @green;
 }
 
 //text selection
@@ -468,12 +539,4 @@ address {
 ::-moz-selection {
 	background-color: @brand-primary;
 	color: @white;
-}
-
-.post {
-	opacity:0;
-}
-
-.visible {
-	opacity: 1 !important;
 }

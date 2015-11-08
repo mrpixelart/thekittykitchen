@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php comments_template(); ?>	
-	<header class="entry-header nudge-bottom-sm">
+	<header class="entry-header">
 	</header><!-- .entry-header -->
 	<div class="row">
 		<div class="col-md-10 col-lg-9">
@@ -35,7 +35,7 @@
 					<div class="row">
 						<div class="col-xs-12">	
 
-							<h3><?php the_title(); ?></h3>
+							<h2><?php the_title(); ?></h2>
 							<div class=" visible-xs visible-sm">
 								<div class="inline post-links">
 									<span><i class="ui user icon"></i>BY: <?php the_author(); ?></span>
@@ -51,12 +51,13 @@
 								}  
 								?>
 							</div>		
-							<div class="entry-content inline-comment-bubble">	
+							<div class="entry-content inline-comment-bubble nudge-all-xs">	
 								<p><?php the_content(); ?>	</p>	
-									<?php get_template_part( 'templates/recipe' ); ?>			
-							</div><!-- .entry-content -->				
-							<hr>
-
+								
+							</div><!-- .entry-content -->
+							<div class="bump-bottom-md">
+								<?php get_template_part( 'templates/recipe' ); ?>				
+							</div>
 						</div>				
 					</div>	
 				</div>		

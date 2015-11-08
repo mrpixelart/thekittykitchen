@@ -1,10 +1,11 @@
 <section>
 	<div class="container">
-		<?php
-			//WordPress loop for custom post type
-		$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
-		while ($my_query->have_posts()) : $my_query->the_post(); ?>
 		<div class="row">
+			
+			<?php
+			//WordPress loop for custom post type
+			$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
+			while ($my_query->have_posts()) : $my_query->the_post(); ?>
 			<div class="col-sm-4">
 				<a href="<?php the_permalink(); ?>">
 					<?php
@@ -13,10 +14,10 @@
 					}  
 					?>
 				</a>
+				
 			</div>
-		</div>
-		<hr>
-	<?php endwhile;  wp_reset_query(); ?>
+		<?php endwhile;  wp_reset_query(); ?>
+	</div>
 
 </div>
 </section>

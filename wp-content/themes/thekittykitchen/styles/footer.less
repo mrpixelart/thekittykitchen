@@ -1,47 +1,48 @@
 //================================================
 // footer styling
 //================================================
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 120px;
+}
+
+footer {
+	position: relative;
+	margin-top: -120px;
+	height: 120px;
+	clear:both;
+}
+
 .footer-wrapper {
-	background: @brand-primary;
-	padding: 30px;
-	* {
-		color: @white;
-	} // * 
 
-	hr {
-		opacity: .5;
-	}
+	background-color: @white;
+	border-top: 1px solid @gray;
 
-	a {
-		color: @link-hover;
-		&:hover {
-			color:@white;
-		}
-	}
-	address {
+	.menu-main-menu li {
+		list-style: none;
+		cursor: pointer;
 		font-size: @xs-size;
 	}
-	li {
-		line-height: 110%;
+
+	//current menu item styling
+	li.current-menu-item a {
+		color: @brand-primary !important;
+		text-decoration: none;
 	}
 
-	a {
-		font-size: @xxs-size;
-		font-family: @body-typeface;
-	}
-
-	span.small {
-		opacity: .8;
-	}
-	h4 {	
-		font-size: @xs-size;		
-		margin-bottom: 0;
-		padding-bottom: @xs-size;
-		text-transform: uppercase;
-	}
+	ul {
+		padding-left: 0 !important;
+	} 
 } // footer-wrapper
 
 .footer-logo {
 	max-width: 100%;
 }
+
+
 
