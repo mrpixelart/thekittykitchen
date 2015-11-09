@@ -1,10 +1,10 @@
 //==================================
 // News section
 //==================================
-.img-news-post {
-	max-height: 300px;
-	overflow: hidden;
-}
+// .img-news-post {
+// 	max-height: 300px;
+// 	overflow: hidden;
+// }
 
 .month {
 	font-size: @xxs-size;
@@ -13,7 +13,7 @@
 }
 
 .day {
-	font-size: @lg-size;
+	font-size: @xl-size;
 	text-align: right;
 }
 
@@ -27,7 +27,8 @@
 	// margin-top: -75px;
 }
 .widget-title {
-	font-size: @xxs-size;
+	font-size: .6em;
+	color: @gray-dark;
 	text-transform: uppercase;
 	padding-bottom: 10px;
 	border-bottom: 1px solid darken(@gray-light, 10%);
@@ -45,7 +46,7 @@
 	// margin-top: @xxs-size;
 }
 
-.searchform {
+#searchform {
 	label {
 		font-size: @xxs-size;
 		font-weight: @regular;
@@ -133,13 +134,32 @@
 }
 
 .post-categories {
-	font-size: @xxs-size;
+	font-size: @xs-size;
 	font-weight: @light;
 	list-style: none;
-	display:inline-block;
 	padding:0;
 	margin:0;
+
+	li {
+		display:inline;
+		padding-right:@xxs-size;
+	}
 }
+
+.featured-slide {
+	.post-categories {
+		font-size: @sm-size;
+	}
+	span.s1 {
+		font-size: @sm-size;
+		line-height: 1.3;
+	}
+}
+.addthis_toolbox.addthis_default_style {
+	margin-bottom: @sm-size;
+
+}
+
 .contact-form-wrapper {	
 	p.lead {
 		font-size: @md-size;

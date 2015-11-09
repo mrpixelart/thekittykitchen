@@ -34,33 +34,34 @@
 				<div class="col-md-10">
 					<div class="row">
 						<div class="col-xs-12">	
-
-							<h2><?php the_title(); ?></h2>
-							<div class=" visible-xs visible-sm">
-								<div class="inline post-links">
-									<span><i class="ui user icon"></i>BY: <?php the_author(); ?></span>
-									<span><i class="ui folder open outline icon"></i> POSTED IN <?php the_category($post_id); ?></span>
-									<span><i class="ui comments outline icon"></i> WITH <?php comments_number(); ?></span>
-									<span><a href="<?php the_permalink(); ?>"><i class="ui linkify icon"></i> Permalink</a></span>
+							<div class="ui segment">  
+								<h2><?php the_title(); ?></h2>
+								<div class=" visible-xs visible-sm">
+									<div class="inline post-links">
+										<span><i class="ui user icon"></i>BY: <?php the_author(); ?></span>
+										<span><i class="ui folder open outline icon"></i> POSTED IN <?php the_category($post_id); ?></span>
+										<span><i class="ui comments outline icon"></i> WITH <?php comments_number(); ?></span>
+										<span><a href="<?php the_permalink(); ?>"><i class="ui linkify icon"></i> Permalink</a></span>
+									</div>
 								</div>
+								<div class="img-news-post">
+									<?php
+									if ( has_post_thumbnail() ) { 
+										the_post_thumbnail('large', array('class' => 'img-responsive post-image'));
+									}  
+									?>
+								</div>		
+								<div class="entry-content inline-comment-bubble nudge-all-xs">	
+									<p><?php the_content(); ?>	</p>
+
+								</div><!-- .entry-content -->
 							</div>
-							<div class="img-news-post">
-								<?php
-								if ( has_post_thumbnail() ) { 
-									the_post_thumbnail('large', array('class' => 'img-responsive post-image'));
-								}  
-								?>
-							</div>		
-							<div class="entry-content inline-comment-bubble nudge-all-xs">	
-								<p><?php the_content(); ?>	</p>	
-								
-							</div><!-- .entry-content -->
-							<div class="bump-bottom-md">
+							<div class="ui segment">
 								<?php get_template_part( 'templates/recipe' ); ?>				
-							</div>
-						</div>				
-					</div>	
-				</div>		
+							</div>				
+						</div>	
+					</div>		
+				</div>
 			</div>
 		</div>
 

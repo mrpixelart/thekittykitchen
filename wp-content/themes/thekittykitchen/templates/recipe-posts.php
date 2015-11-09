@@ -9,20 +9,19 @@
 
 				<div class="ui segment">
 					<div class="row">
-						<div class="col-sm-4">
+						<div class="col-sm-5">
 							<?php
 							if ( has_post_thumbnail() ) { 
 								the_post_thumbnail('large', array('class' => 'img-responsive noleft'));
 							}  
 							?>
 						</div>
-						<div class="col-sm-8">
+						<div class="col-sm-7">
 
-							<h3 class="sm-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<p class="xxs-text"><?php the_advanced_excerpt('length=30&length_type=words&no_custom=1&ellipsis=%26hellip;&exclude_tags=img,p,strong'); ?></p>
-							<h4 class="widget-title nobottom">Tags</h4>
-							<?php wp_tag_cloud('smallest=10&largest=10&number=10&orderby=name&format=flat'); ?>
-
+							<h3 class="md-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<p class="xxs-text"><?php the_advanced_excerpt('length=28&length_type=words&no_custom=1&ellipsis=%26hellip;&exclude_tags=img,p,strong'); ?></p>
+							<h4 class="widget-title nobottom bump-top-xxs">Categories</h4>  
+							<?php the_category($post_id); ?>
 						</div>
 					</div>
 				</div>

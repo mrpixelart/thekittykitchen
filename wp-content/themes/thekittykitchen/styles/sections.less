@@ -13,6 +13,7 @@ body, html {
 	bottom: 0;
 	height: auto !important;
 	width: auto;
+	overflow-x: hidden;
 }
 
 
@@ -39,60 +40,24 @@ section {
 } // .section-cta
 
 
-.woocommerce-cart .cart-collaterals .cart_totals table {
-	width: 100% !important;
-}
-.cart-subtotal {
-	span.amount {
-
-		float:right !important;
-	}
-}
-.order-total {
-	span.amount {
-
-		float:right !important;
-	}
-}
-.amount {
-	color: @green;
-	font-family: @headline-typeface;
-
+.ui.segment {
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	border: 1px solid @gray;
+	padding: 10px;
 }
 
-span.price span.amount {
-	font-size: @sm-size;
-	line-height: 2;
-}
-
-tr.shipping {
-	td {
-		float: right !important;
-	}
-}
-
-.attachment-shop_thumbnail {
-	max-width: 100%;
-	height: auto;
-}
-
-.card-content {
-	padding: .4em;
-}
-
-.card-title {
-	min-height: 65px;
-}
-
-.featured-card-content {
-	padding: .4em;
-}
-
-.featured-card-title {
-	min-height: 60px;
+.ingredient-panel {
+	background-color: @gray-light;
+	padding: @xs-size;
 }
 
 .featured-post-img {
 	overflow: hidden;
 	max-height: 300px;
+}
+
+span.s1 {
+	font-size: @xs-size;
+	line-height: 1;
 }
