@@ -18,8 +18,8 @@
 						</div>
 						<div class="col-sm-7">
 
-							<h3 class="md-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<p class="xxs-text"><?php the_advanced_excerpt('length=28&length_type=words&no_custom=1&ellipsis=%26hellip;&exclude_tags=img,p,strong'); ?></p>
+							<h3 class="lg-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<p><?php the_advanced_excerpt('length=28&length_type=words&no_custom=1&ellipsis=%26hellip;&exclude_tags=img,p,strong'); ?></p>
 							<h4 class="widget-title nobottom bump-top-xxs">Categories</h4>  
 							<?php the_category($post_id); ?>
 						</div>

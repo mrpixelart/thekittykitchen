@@ -6,7 +6,7 @@
 	<li class="xxs-text bump-right-xxs"><label> <i class="users icon"></i> Serves </label> <span class="primary-color bump-left-xxs"><?php the_field('servings'); ?></span></li>
 	<li class="xxs-text bump-right-xxs"><label> <i class="info circle icon"></i> Calories </label> <span class="primary-color bump-left-xxs"><?php the_field('calories'); ?></span></li>
 </ul>
-<div class="ingredient-panel">
+<div class="ingredient-panel bump-top-sm">
 	<h4 class="xxs-text uppercase">Ingredients</h4>
 	<?php if( have_rows('ingredients') ): ?>
 		<?php while( have_rows('ingredients') ): the_row();
