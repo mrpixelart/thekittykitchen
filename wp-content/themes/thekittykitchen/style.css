@@ -284,12 +284,11 @@ span.s1 {
   display: inline;
   padding-right: 0.9em;
 }
-.featured-slide .post-categories {
+.featured-slide {
   font-size: 1.2em;
 }
-.featured-slide span.s1 {
-  font-size: 1.34em;
-  line-height: 1.3;
+.featured-slide .post-categories {
+  font-size: 1em !important;
 }
 .addthis_toolbox.addthis_default_style {
   margin-bottom: 0.9em;
@@ -1060,6 +1059,46 @@ a .inverse:hover {
 }
 .flexslider {
   margin-bottom: 0;
+}
+.flexslider.loading .slides > li:first-child {
+  opacity: 0 !important;
+}
+.incom-comments-wrapper .incom-info-icon {
+  font-size: 0;
+  height: 0;
+}
+.incom-comments-wrapper .incom-comments-wrapper li:last-child {
+  border-bottom: none;
+}
+.incom-comments-wrapper .comment-form-comment {
+  padding-top: 20px;
+}
+.incom-comments-wrapper textarea {
+  border: solid 2px #d2d6db;
+  outline: none;
+}
+.incom-comments-wrapper textarea:focus,
+.incom-comments-wrapper textarea:active {
+  border: solid 2px #6dbfb8;
+  outline: none;
+  transition: .3s;
+}
+.incom-comments-wrapper input[type="submit"] {
+  background: none;
+  border: solid 3px #6dbfb8;
+  color: #6dbfb8;
+  transition: .3s;
+}
+.incom-comments-wrapper input[type="submit"]:hover {
+  background: #6dbfb8;
+  color: #ffffff;
+  transition: .3s;
+}
+.incom-bubble {
+  background: #6dbfb8 !important;
+}
+.incom-bubble-style:after {
+  border-color: transparent #6dbfb8 !important;
 }
 html {
   font-family: sans-serif;

@@ -21,6 +21,12 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+// function wpt_theme_js() {
+
+// 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );		
+// }
+
+
 // This theme uses post thumbnails
 add_theme_support( 'post-thumbnails', array( 'recipe', 'post' ) );
 // Add it for posts

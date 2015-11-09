@@ -1,4 +1,4 @@
-<h4 class="sm-text">Recipe: <?php the_field('recipe_name'); ?></h4>
+<h4 class="md-text">Recipe: <?php the_field('recipe_name'); ?></h4>
 
 <ul class="inline-list unstyled-list">
 	<li class="xxs-text bump-right-xxs"><label> <i class="wait icon"></i> Prep Time </label> <span class="primary-color bump-left-xxs"><?php the_field('prep_time'); ?></span></li>

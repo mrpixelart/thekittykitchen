@@ -2,6 +2,8 @@
 $(window).load(function() {
 	$('.flexslider').flexslider({
 		animation: "slide",
-		slideshow: false
+		slideshow: false,
+		start: function(slider) { slider.removeClass('loading');  }
 	});
 });
+

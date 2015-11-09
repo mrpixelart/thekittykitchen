@@ -1,7 +1,7 @@
 <div class="container"> 
 
   <div class="ui segment bump-top-sm">
-    <div class="flexslider">
+    <div class="flexslider loading">
      <ul class="slides">
 
       <?php
@@ -12,22 +12,22 @@
 
         <div class="row">
 
-          <div class="col-sm-8">
+          <div class="col-md-8">
 
             <a href="<?php the_permalink(); ?>">
               <?php
               if ( has_post_thumbnail() ) { 
-                the_post_thumbnail('large', array('class' => 'img-responsive'));
+                the_post_thumbnail('large', 'nopin="nopin"', array('class' => 'img-responsive'));
               }  
               ?>
             </a>
 
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4 ">
             <div class="nudge-all-md featured-slide">
-              <h3 class="xl-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <h3 class="lg-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <p class="sm-text"><?php the_advanced_excerpt('length=30&length_type=words&no_custom=1&ellipsis=%26hellip;&exclude_tags=img,p,strong'); ?></p>
-              <h4 class="widget-title nobottom sm-text bump-top-xl">Categories</h4>
+              <h4 class="widget-title nobottom xxs-text bump-top-xl">Categories</h4>
               <?php the_category($post_id); ?>
             </div>
           </div>

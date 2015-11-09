@@ -35,7 +35,7 @@
 					<div class="row">
 						<div class="col-xs-12">	
 							<div class="ui segment">  
-								<h2><?php the_title(); ?></h2>
+								<h2 class="xl-text"><?php the_title(); ?></h2>
 								<div class=" visible-xs visible-sm">
 									<div class="inline post-links">
 										<span><i class="ui user icon"></i>BY: <?php the_author(); ?></span>

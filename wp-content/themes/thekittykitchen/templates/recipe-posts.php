@@ -9,14 +9,14 @@
 
 				<div class="ui segment">
 					<div class="row">
-						<div class="col-sm-5">
+						<div class="col-md-5">
 							<?php
 							if ( has_post_thumbnail() ) { 
 								the_post_thumbnail('large', array('class' => 'img-responsive noleft'));
 							}  
 							?>
 						</div>
-						<div class="col-sm-7">
+						<div class="col-md-7">
 
 							<h3 class="lg-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<p><?php the_advanced_excerpt('length=28&length_type=words&no_custom=1&ellipsis=%26hellip;&exclude_tags=img,p,strong'); ?></p>
