@@ -14,10 +14,10 @@
 			<p class="xxs-text primary-text">Photographer/artist located in Boulder, CO. Food porn. Cat pics.</p>
 		</div>
 		<?php dynamic_sidebar('blog'); ?>
-		<aside class="tags bump-bottom-sm">
+	<!-- 	<aside class="tags bump-bottom-sm">
 			<h4 class="widget-title">Tags</h4>
 			<?php wp_tag_cloud('smallest=10&largest=10&number=10&orderby=name&format=flat'); ?>
-		</aside>
+		</aside> -->
 	</div>
 <?php endif; ?>
 <!-- #secondary -->

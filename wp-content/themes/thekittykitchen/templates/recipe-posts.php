@@ -2,6 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-9">
+				<h3 class="uppercase">Recent Recipes</h3>
 				<?php
 			//WordPress loop for custom post type
 				$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
@@ -26,6 +27,7 @@
 					</div>
 				</div>
 			<?php endwhile;  wp_reset_query(); ?>
+
 		</div>
 
 		<div class="col-sm-3">

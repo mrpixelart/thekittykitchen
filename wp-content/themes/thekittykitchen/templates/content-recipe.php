@@ -51,7 +51,7 @@
 									}  
 									?>
 								</div>		
-								<div class="entry-content inline-comment-bubble nudge-all-xs">	
+								<div class="entry-content nudge-all-xs">	
 									<p><?php the_content(); ?>	</p>
 
 								</div><!-- .entry-content -->

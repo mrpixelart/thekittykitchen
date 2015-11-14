@@ -22,7 +22,6 @@
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>	
 
 
-	<script src="<?php echo get_stylesheet_directory_uri(); ?>/bower_components/flexslider/jquery.flexslider.js"></script>
 	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/app.js"></script>
 	<div id="fb-root"></div>
 

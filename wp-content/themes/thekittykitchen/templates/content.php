@@ -17,10 +17,10 @@
 	<div class="row">
 
 		<div class="col-md-10 col-lg-9">
-		<?php
+			<?php
 			//WordPress loop for custom post type
-		$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
-		while ($my_query->have_posts()) : $my_query->the_post(); ?>
+			$my_query = new WP_Query('post_type=recipe&posts_per_page=-1');
+			while ($my_query->have_posts()) : $my_query->the_post(); ?>
 			<div class="row">
 				<div class="col-md-2 " >
 					<div class="hidden-xs hidden-sm">
@@ -41,7 +41,8 @@
 					<div class="row">
 						<div class="col-xs-12">	
 
-							<h3><?php the_title(); ?></h3>
+							<h3 class="lg-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
 							<div class=" visible-xs visible-sm">
 								<div class="inline post-links">
 									<span><i class="ui user icon"></i>BY: <?php the_author(); ?></span>
@@ -57,7 +58,7 @@
 								}  
 								?>
 							</div>		
-							<div class="entry-content inline-comment-bubble">	
+							<div class="entry-content">	
 								<p><?php the_content(); ?>	</p>				
 							</div><!-- .entry-content -->				
 							<hr>
@@ -65,8 +66,9 @@
 					</div>	
 				</div>		
 			</div>
-				<?php endwhile;  wp_reset_query(); ?>
-		</div>
+		<?php endwhile;  wp_reset_query(); ?>
+		
+	</div>
 	
 
 	<div class="col-md-2 col-lg-3 " >

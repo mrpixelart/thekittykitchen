@@ -1,7 +1,7 @@
 <div class="container"> 
-
+<h3 class="bump-top-sm uppercase">Featured Recipe</h3>
   <div class="ui segment bump-top-sm">
-    <div class="flexslider loading">
+    <div class="flexslider">
      <ul class="slides">
 
       <?php

@@ -1,9 +1,9 @@
 /*
-Theme Name: Sanctuary Academy
-Theme URI: http://sanctuaryacademy.org
+Theme Name: The Kitty Kitchen
+Theme URI: http://thekittykitchen.com
 Author: Mitch Ray
 Author URI: http://mitchray.me
-Description: Custom Wordpress Theme for Sanctuary Academy
+Description: Built with love on 10/25/15 for the Kitty Kitchen
 Version: 0.1;
 */
 .logo-wrapper {
@@ -250,9 +250,12 @@ span.s1 {
 .widget_categories .cat-item {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0.9em;
   font-size: 0.9em;
   font-weight: 300;
+  border: 1px solid #d2d6db;
+  background-color: #ffffff;
+  margin-bottom: 1em;
 }
 .textwidget {
   font-size: 0.9em;
@@ -1062,43 +1065,6 @@ a .inverse:hover {
 }
 .flexslider.loading .slides > li:first-child {
   opacity: 0 !important;
-}
-.incom-comments-wrapper .incom-info-icon {
-  font-size: 0;
-  height: 0;
-}
-.incom-comments-wrapper .incom-comments-wrapper li:last-child {
-  border-bottom: none;
-}
-.incom-comments-wrapper .comment-form-comment {
-  padding-top: 20px;
-}
-.incom-comments-wrapper textarea {
-  border: solid 2px #d2d6db;
-  outline: none;
-}
-.incom-comments-wrapper textarea:focus,
-.incom-comments-wrapper textarea:active {
-  border: solid 2px #6dbfb8;
-  outline: none;
-  transition: .3s;
-}
-.incom-comments-wrapper input[type="submit"] {
-  background: none;
-  border: solid 3px #6dbfb8;
-  color: #6dbfb8;
-  transition: .3s;
-}
-.incom-comments-wrapper input[type="submit"]:hover {
-  background: #6dbfb8;
-  color: #ffffff;
-  transition: .3s;
-}
-.incom-bubble {
-  background: #6dbfb8 !important;
-}
-.incom-bubble-style:after {
-  border-color: transparent #6dbfb8 !important;
 }
 html {
   font-family: sans-serif;

@@ -51,7 +51,7 @@
 								}  
 								?>
 							</div>		
-							<div class="entry-content inline-comment-bubble">	
+							<div class="entry-content">	
 								<p><?php the_content(); ?>	</p>				
 							</div><!-- .entry-content -->				
 							<hr>

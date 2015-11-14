@@ -21,11 +21,6 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-// function wpt_theme_js() {
-
-// 	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );		
-// }
-
 
 // This theme uses post thumbnails
 add_theme_support( 'post-thumbnails', array( 'recipe', 'post' ) );
@@ -53,16 +48,14 @@ function blog_widgets_init() {
 add_action( 'widgets_init', 'blog_widgets_init' );
 
 
-// add_action( 'init', 'create_post_type' );
-// function create_post_type() {
-//   register_post_type( 'recipes',
-//     array(
-//       'labels' => array(
-//         'name' => __( 'Recipes' ),
-//         'singular_name' => __( 'Recipe' )
-//       ),
-//       'public' => true,
-//       'has_archive' => true,
-//     )
-//   );
-// }
+function searchfilter($query) {
+
+    if ($query->is_search && !is_admin() ) {
+        $query->set('post_type',array('post','recipe'));
+    }
+
+return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');
+
